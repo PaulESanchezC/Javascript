@@ -19,42 +19,47 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
   </head>
+
   <body>
-    <!-- Quote container -->
-    <div class="quote-container col-12" id="quote-container">
-      <div class="title">
-        <span class="sans"> Quote generator</span>
-      </div>
-      <div>
-        <i class="fas fa-quote-left"></i>
-        <span id="quote" class="quotes"> The quote would be shown here. </span>
-        <i class="fas fa-quote-right"></i>
+    <div class="page">
+      <!-- Quote container -->
+      <div class="quote-container" id="quote-container">
+        <div class="title">
+          <span class="sans"> Quote generator</span>
+        </div>
+        <div>
+          <i class="fas fa-quote-left"></i>
+          <span id="quote" class="quotes">
+            The quote would be shown here.
+          </span>
+          <i class="fas fa-quote-right"></i>
+        </div>
+
+        <!-- Author -->
+        <div class="quote-author">
+          <span id="author">Buddah </span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+          <button class="twitter-button" id="twitter-button" title="tweet it!">
+            <i class="fab fa-twitter"></i>
+          </button>
+
+          <button id="new-quote">New Quote</button>
+        </div>
       </div>
 
-      <!-- Author -->
-      <div class="quote-author">
-        <span id="author">Buddah </span>
+      <div class="footer">
+        <span class="footer-text">
+          Developed by:
+          <br />
+          <a href="https://github.com/PaulESanchezC">
+            Paul Sanchez
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </span>
       </div>
-
-      <!-- Buttons -->
-      <div class="button-container">
-        <button class="twitter-button" id="twitter-button" title="tweet it!">
-          <i class="fab fa-twitter"></i>
-        </button>
-
-        <button id="new-quote">New Quote</button>
-      </div>
-    </div>
-
-    <div class="footer">
-      <span class="footer-text">
-        Developed by:
-        <br />
-        <a href="https://github.com/PaulESanchezC">
-          Paul Sanchez
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </span>
     </div>
 
     <!-- Scripts -->
