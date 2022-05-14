@@ -15,6 +15,7 @@
     />
     <!-- Fontawesome -->
     <link
+      defer
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
@@ -29,15 +30,13 @@
         </div>
         <div>
           <i class="fas fa-quote-left"></i>
-          <span id="quote" class="quotes">
-            The quote would be shown here.
-          </span>
+          <span id="quote" class="quotes"></span>
           <i class="fas fa-quote-right"></i>
         </div>
 
         <!-- Author -->
         <div class="quote-author">
-          <span id="author">Buddah </span>
+          <span id="author"></span>
         </div>
 
         <!-- Buttons -->
@@ -63,8 +62,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/script.js"></script>
-    <script src="/js/getQuotes.js"></script>
-    <script src="/js/tweetQuote.js"></script>
+    <script defer src="/js/script.js"></script>
+    <script async src="/js/getQuotes.js"></script>
+    <script defer src="/js/tweetQuote.js"></script>
   </body>
 </html>

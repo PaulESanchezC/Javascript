@@ -4,7 +4,7 @@ function getQuotes() {
   let getNewQuote = document.getElementById("new-quote");
 
   async function getQuoutesAsync() {
-    const apiUrl = "https://type.fit/api/quotes";
+    let apiUrl = "https://type.fit/api/quotes";
     let quotesArray = [];
     let randomIndex = 0;
 
@@ -21,11 +21,15 @@ function getQuotes() {
         `error occoured on GET:${apiUrl}, status: ${response.status},
           Error: ${error}`
       );
+      quoteText.textContent = `$there seems to be an error: ${error}`;
+      console.log(email["fetchError"]);
+      authorText.textContent = `I am terribly sorry ${email["fetchError"]}`;
     }
     return quotesArray[randomIndex];
   }
 
   async function getSingleQuote() {
+    loading();
     let quote = await getQuoutesAsync();
 
     if (quote.text.length > 100) {
@@ -46,6 +50,11 @@ function getQuotes() {
   // Event listeners
   // On Get New Quote
   getNewQuote.addEventListener("click", getSingleQuote);
+
+  function loading() {
+    quoteText.textContent = "...";
+    authorText.textContent = "...";
+  }
 }
 
 getQuotes();
