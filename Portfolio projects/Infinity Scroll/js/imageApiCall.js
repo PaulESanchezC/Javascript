@@ -12,22 +12,3 @@ getImagesAsync = async function (count) {
     console.log(`Error, ${response.status}, ${error}`);
   }
 };
-
-function buildImages(photoArray) {
-  let imageContainer = document.getElementById("image-container");
-  photoArray.forEach((photo) => {
-    const item = document.createElement("a");
-    item.setAttribute("href", photo.links.html);
-    item.setAttribute("target", "_blank");
-
-    const img = document.createElement("img");
-    img.setAttribute("src", photo.urls.regular);
-    img.setAttribute("alt", photo.alt_description);
-    img.setAttribute("title", photo.alt_description);
-
-    item.appendChild(img);
-    imageContainer.appendChild(item);
-  });
-}
-
-getImagesAsync();
