@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.page {
+  position: relative;
+  margin: 0 0;
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: "Pacifico", cursive;
+}
+
+.page-title {
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  transform: translate(-50% -50%);
+}
+
+.developed-by {
+  font-size: 3rem;
+  font-family: "Sacramento", cursive;
+}
+a:hover {
+  color: rgba(15, 132, 132, 0.7);
+}
+a:active {
+  color: rgba(155, 132, 132, 0.5);
+}
+
+.image-container {
+  margin: 10px 30%;
+  padding: 15px;
+}
+
+.image-container img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    margin: 15px 15px;
+    padding: 5px;
+  }
+}
