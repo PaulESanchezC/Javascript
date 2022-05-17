@@ -1,1 +1,3 @@
-console.log("Template v1.0 lunched");
+import * as Toggler from "./toggleTheme.js";
+
+Toggler.themeToggleEvent();
