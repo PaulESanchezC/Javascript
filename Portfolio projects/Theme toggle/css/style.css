@@ -1,0 +1,11 @@
+body {
+  margin: 0 0;
+  width: 100vh;
+  height: 100vh;
+}
+
+.page {
+  position: relative;
+  margin: 0 0;
+  padding: 0 0;
+}
